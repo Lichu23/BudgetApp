@@ -14,7 +14,7 @@ import { QueryClient } from "@tanstack/react-query";
 
 export default function DashboardView() {
   const queryClient = new QueryClient();
-  const { data, isLoading, isError } = useQuery({
+  const { data, isLoading } = useQuery({
     queryKey: ["budgets"],
     queryFn: getAllBudgets,
   });

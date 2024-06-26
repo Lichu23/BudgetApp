@@ -15,7 +15,6 @@ export default function RequestTokenView() {
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors },
   } = useForm({ defaultValues: initialValues });
 

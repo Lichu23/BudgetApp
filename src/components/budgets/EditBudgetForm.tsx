@@ -1,11 +1,10 @@
 
-import { updateBudget } from "../../api/BudgetApi";
-import { Budget, BudgetFormData} from "../../types"; 
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { updateBudget } from "../../api/BudgetApi";
+import { Budget, BudgetFormData } from "../../types";
 import BudgetForm from "./BudgetForm";
 
 type EditBudgetViewProps = {
